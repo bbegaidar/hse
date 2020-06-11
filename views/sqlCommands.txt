@@ -1,0 +1,92 @@
+ALTER TABLE videos_category
+ADD COLUMN `description` TEXT NULL;
+
+CREATE TABLE user_video_permit (
+id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+video_cat_id INT(11) NOT NULL,
+user_id INT(11) NOT NULL,
+record_id INT(11) NOT NULL,
+test_id INT(11) NOT NULL,
+rating INT(11) NOT NULL
+);
+
+ALTER TABLE user_video_viewed
+ADD COLUMN video_url VARCHAR(255) NULL;
+
+ALTER TABLE user_permit ALTER COLUMN training SET DEFAULT 0;
+
+ALTER TABLE user_permit ALTER COLUMN entry SET DEFAULT 0;
+
+ALTER TABLE user_permit 
+ADD COLUMN videos_category_id INT(11) NOT NULL DEFAULT 0;
+
+ALTER TABLE user_permit 
+ADD COLUMN record_id INT(11) NOT NULL DEFAULT 0;
+
+ALTER TABLE user_tests 
+ADD COLUMN record_premit INT(11) NOT NULL DEFAULT 0;
+
+ALTER TABLE user_tests DROP FOREIGN KEY `user_tests_ibfk_1`;
+
+ALTER TABLE user_tests DROP INDEX `permit`;
+
+UPDATE `record_video_lesson` SET `viewed`= 0;
+
+ALTER TABLE test
+ADD COLUMN passing_point int(5) NOT NULL DEFAULT 0;
+
+CREATE TABLE video_about_company (
+id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+video_path varchar(255) NULL,
+is_active INT(11) NOT NULL DEFAULT 0
+);
+
+ALTER TABLE video_about_company
+ADD COLUMN lang_id int(11) NOT NULL;
+
+CREATE TABLE logo (
+id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+img varchar(255) NULL,
+is_active INT(11) NOT NULL DEFAULT 0
+);
+
+CREATE TABLE licences (
+id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+img varchar(255) NULL,
+is_active INT(11) NOT NULL DEFAULT 0
+);
+
+ALTER TABLE team
+ADD COLUMN email varchar(255) NULL,
+ADD COLUMN phone varchar(255) NULL,
+ADD COLUMN mob_phone varchar(255) NULL;
+
+ALTER TABLE logo
+ADD COLUMN img_name varchar(255) NULL,
+ADD COLUMN img_mime varchar(255) NULL,
+ADD COLUMN img_size varchar(255) NULL,
+ADD COLUMN img_type varchar(255) NULL;
+
+ALTER TABLE licences
+ADD COLUMN img_name varchar(255) NULL,
+ADD COLUMN img_mime varchar(255) NULL,
+ADD COLUMN img_size varchar(255) NULL,
+ADD COLUMN img_type varchar(255) NULL;
+
+ALTER TABLE pages
+ADD COLUMN images TEXT NULL;
+
+ALTER TABLE photogallery
+ADD COLUMN title_eng TEXT NULL,
+ADD COLUMN title_kaz TEXT NULL,
+ADD COLUMN description_rus TEXT NULL,
+ADD COLUMN description_eng TEXT NULL,
+ADD COLUMN description_kaz TEXT NULL,
+ADD COLUMN date INT;
+
+ALTER TABLE photogallery
+ADD COLUMN category_id INT NOT NULL DEFAULT 1;
+
+ALTER TABLE photogallery
+ADD COLUMN year INT NOT NULL DEFAULT 1,
+ADD COLUMN month INT NOT NULL DEFAULT 1;

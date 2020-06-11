@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'MuseoSansCyrl';
+    src: url('../fonts1/MuseoSansCyrl.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ofont.ru_Museo Sans Cyrl_300';
+    src: url('../fonts1/ofont.ru_Museo_Sans_Cyrl_300.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ofont.ru_Museo_Sans_Cyrl_500';
+    src: url('../fonts1/ofont.ru_Museo_Sans_Cyrl_300.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ofont.ru_Museo_Sans_Cyrl_700';
+    src: url('../fonts1/ofont.ru_Museo_Sans_Cyrl_700.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PantonBlack';
+    src: url('../fonts1/PantonBlack.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PantonBlackItalic';
+    src: url('../fonts1/PantonBlackItalic.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PantonBold';
+    src: url('../fonts1/PantonBold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PantonBoldItalic';
+    src: url('../fonts1/PantonBoldItalic.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PantonExtraBold';
+    src: url('../fonts1/PantonExtraBold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PantonExtraLight';
+    src: url('../fonts1/PantonExtraLight.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PantonLight';
+    src: url('../fonts1/PantonLight.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PantonLightItalic';
+    src: url('../fonts1/PantonLightItalic.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PantonSemiBold';
+    src: url('../fonts1/PantonSemiBold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PantonThin';
+    src: url('../fonts1/PantonThin.otf');
+    font-weight: normal;
+    font-style: normal;
+}
